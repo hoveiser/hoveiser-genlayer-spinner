@@ -8,39 +8,117 @@
   :root{--cobalt:#110FFF;--void:#070707;--ceramic:#F5F5F5;--asphalt:#606060}
   *{box-sizing:border-box}body{margin:0;font:16px/1.6 system-ui,sans-serif;background:var(--ceramic);color:var(--void)}
   header{padding:48px 24px;text-align:center}h1{margin:0 0 8px}p.sub{margin:0;color:var(--asphalt)}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;max-width:960px;margin:0 auto;padding:0 16px 32px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;max-width:1100px;margin:0 auto;padding:0 16px 32px}
   .card{border-radius:16px;padding:32px;display:flex;flex-direction:column;align-items:center;gap:16px}
   .light{background:#fff;border:1px solid #e5e5e5}.dark{background:var(--void);color:var(--ceramic)}
   .sizes{display:flex;align-items:center;gap:20px}
   .label{font-size:12px;letter-spacing:.08em;text-transform:uppercase;opacity:.6}
-  .wrap{max-width:960px;margin:0 auto;padding:0 16px 64px}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 16px 64px}
   pre{background:#111;color:#eee;border-radius:12px;padding:16px;overflow:auto;font-size:13px}
+  .section-title{margin:48px 0 16px;text-align:center}
+  .note{background:#f0f9ff;border-left:4px solid var(--cobalt);padding:12px 16px;margin:16px auto;max-width:800px;border-radius:8px}
 </style>
 </head>
 <body>
 <header>
-  <h1>Neural Consensus</h1>
-  <p class="sub">A loading spinner for the GenLayer Portal — eight validators, one agreement.</p>
+  <h1>Neural Consensus — GenLayer Portal Spinner</h1>
+  <p class="sub">Eight validators, one agreement — a loading animation for the GenLayer Portal</p>
 </header>
+
+<h2 class="section-title">Primary Variant: Abstract</h2>
 <div class="grid">
   <div class="card light"><span class="label">Light · 64px</span>
-    <img src="neural-consensus.svg" width="64" height="64" alt="Spinner on light background"></div>
+    <img src="neural-consensus.svg" width="64" height="64" alt="Abstract spinner on light"></div>
   <div class="card dark"><span class="label">Dark · 64px</span>
-    <img src="neural-consensus.svg" width="64" height="64" alt="Spinner on dark background"></div>
-  <div class="card light"><span class="label">16 / 24 / 32 / 48 px</span>
+    <img src="neural-consensus.svg" width="64" height="64" alt="Abstract spinner on dark"></div>
+  <div class="card light"><span class="label">Size ramp: 16 / 24 / 32 / 48 px</span>
     <div class="sizes">
       <img src="neural-consensus.svg" width="16" height="16" alt="">
       <img src="neural-consensus.svg" width="24" height="24" alt="">
       <img src="neural-consensus.svg" width="32" height="32" alt="">
       <img src="neural-consensus.svg" width="48" height="48" alt="">
     </div></div>
-  <div class="card dark"><span class="label">Alternate · Hex Chain</span>
-    <img src="hex-chain.svg" width="64" height="64" alt="Hex chain spinner"></div>
+  <div class="card dark"><span class="label">Size ramp: 16 / 24 / 32 / 48 px</span>
+    <div class="sizes">
+      <img src="neural-consensus.svg" width="16" height="16" alt="">
+      <img src="neural-consensus.svg" width="24" height="24" alt="">
+      <img src="neural-consensus.svg" width="32" height="32" alt="">
+      <img src="neural-consensus.svg" width="48" height="48" alt="">
+    </div></div>
 </div>
+
+<h2 class="section-title">Alternative Variant: With Official Mark</h2>
+<div class="note">
+  <strong>Note:</strong> This variant keeps the official GenLayer mark static while the validation ring rotates around it — ideal for larger sizes (32px+) where the brand identity should be clearly visible.
+</div>
+<div class="grid">
+  <div class="card light"><span class="label">Light · 64px</span>
+    <img src="neural-consensus-mark.svg" width="64" height="64" alt="Spinner with mark on light"></div>
+  <div class="card dark"><span class="label">Dark · 64px</span>
+    <img src="neural-consensus-mark.svg" width="64" height="64" alt="Spinner with mark on dark"></div>
+  <div class="card light"><span class="label">Size ramp: 32 / 48 / 64 / 80 px</span>
+    <div class="sizes">
+      <img src="neural-consensus-mark.svg" width="32" height="32" alt="">
+      <img src="neural-consensus-mark.svg" width="48" height="48" alt="">
+      <img src="neural-consensus-mark.svg" width="64" height="64" alt="">
+      <img src="neural-consensus-mark.svg" width="80" height="80" alt="">
+    </div></div>
+  <div class="card dark"><span class="label">Size ramp: 32 / 48 / 64 / 80 px</span>
+    <div class="sizes">
+      <img src="neural-consensus-mark.svg" width="32" height="32" alt="">
+      <img src="neural-consensus-mark.svg" width="48" height="48" alt="">
+      <img src="neural-consensus-mark.svg" width="64" height="64" alt="">
+      <img src="neural-consensus-mark.svg" width="80" height="80" alt="">
+    </div></div>
+</div>
+
+<h2 class="section-title">Alternate Concept: Hex Chain</h2>
+<div class="grid">
+  <div class="card light"><span class="label">Light · 64px</span>
+    <img src="hex-chain.svg" width="64" height="64" alt="Hex chain on light"></div>
+  <div class="card dark"><span class="label">Dark · 64px</span>
+    <img src="hex-chain.svg" width="64" height="64" alt="Hex chain on dark"></div>
+</div>
+
 <div class="wrap">
+  <h2>Design Rationale</h2>
+  <p><strong>Neural Consensus</strong> visualizes GenLayer's core mechanism: decentralized AI validators reaching agreement. Eight nodes arranged in a circle, with a signature gradient pulse traveling node-to-node, represent consensus being formed across the network.</p>
+  
+  <h3>Primary vs Alternative</h3>
+  <ul>
+    <li><strong>Primary (Abstract):</strong> Ideal for small sizes (16-32px) where the animation alone conveys the brand identity through motion and gradient</li>
+    <li><strong>Alternative (With Mark):</strong> Best for larger contexts (32px+) where the official GenLayer mark should be clearly visible alongside the loading state</li>
+  </ul>
+
+  <h3>Technical Specifications</h3>
+  <ul>
+    <li>Pure SVG + CSS animations — no JavaScript, no dependencies</li>
+    <li>File size: ~1.5KB per variant</li>
+    <li>Seamless infinite loop (1.6s cycle, within GenLayer's 1.5-3s motion guidelines)</li>
+    <li>Works on both light (#F5F5F5) and dark (#070707) backgrounds</li>
+    <li>Crisp and readable from 16px to 96px</li>
+    <li>Accessibility: includes <code>role="img"</code>, <code>aria-label</code>, and respects <code>prefers-reduced-motion</code></li>
+  </ul>
+
+  <h3>Brand Compliance</h3>
+  <p>Built against the official GenLayer Design System (<code>genlayer-foundation/genlayer-design</code>):</p>
+  <ul>
+    <li>Signature gradient <code>#E37DF7 → #9B6AF6 → #110FFF</code> (the brand's primary motif) drives the active pulse</li>
+    <li>Idle nodes use neutral ink <code>#6B6B6B</code>; single accent <code>#110FFF</code></li>
+    <li>Motion: 1.6s gentle ease loop — inside the brand's 1.5–3s window; no bounce/spring</li>
+    <li>The official mark (GenLayer_Mark_White.svg) is used unmodified and never rotated, on a gradient tinted container — the brand's own small-icon pattern</li>
+  </ul>
+
   <h2>Usage</h2>
-  <pre><code>&lt;img src="neural-consensus.svg" width="32" height="32" alt="Loading…"&gt;</code></pre>
-  <p>Self-contained SVG — no JavaScript, no dependencies. Pure-CSS variant in <code>spinner.css</code>.</p>
+  <pre><code>&lt;!-- Primary variant (small sizes) --&gt;
+&lt;img src="neural-consensus.svg" width="32" height="32" alt="Loading…"&gt;
+
+&lt;!-- Alternative variant (larger sizes with brand mark) --&gt;
+&lt;img src="neural-consensus-mark.svg" width="48" height="48" alt="Loading…"&gt;
+
+&lt;!-- React/Vue --&gt;
+import spinner from "./neural-consensus.svg"
+&lt;img src={spinner} alt="Loading…" /&gt;</code></pre>
 </div>
 </body>
 </html>

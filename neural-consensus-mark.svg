@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Loading — GenLayer">
+  <defs>
+    <linearGradient id="ncm-grad" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E37DF7"/>
+      <stop offset=".45" stop-color="#9B6AF6"/>
+      <stop offset="1" stop-color="#110FFF"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .ncm-ring{fill:none;stroke:#6B6B6B;stroke-opacity:.35;stroke-width:1}
+    .ncm-idle{fill:#6B6B6B}
+    .ncm-glow{fill:url(#ncm-grad);opacity:0;animation:ncm-chase 1.6s cubic-bezier(.4,0,.2,1) infinite}
+    .m1{animation-delay:0s}.m2{animation-delay:.2s}.m3{animation-delay:.4s}.m4{animation-delay:.6s}
+    .m5{animation-delay:.8s}.m6{animation-delay:1s}.m7{animation-delay:1.2s}.m8{animation-delay:1.4s}
+    @keyframes ncm-chase{0%,45%,100%{opacity:0}12%,30%{opacity:1}}
+    @media (prefers-reduced-motion:reduce){.ncm-glow{animation:none;opacity:.85}}
+  </style>
+  <circle class="ncm-ring" cx="32" cy="32" r="24"/>
+  <circle class="ncm-idle" cx="32" cy="8" r="4.5"/><circle class="ncm-idle" cx="49" cy="15" r="4.5"/>
+  <circle class="ncm-idle" cx="56" cy="32" r="4.5"/><circle class="ncm-idle" cx="49" cy="49" r="4.5"/>
+  <circle class="ncm-idle" cx="32" cy="56" r="4.5"/><circle class="ncm-idle" cx="15" cy="49" r="4.5"/>
+  <circle class="ncm-idle" cx="8" cy="32" r="4.5"/><circle class="ncm-idle" cx="15" cy="15" r="4.5"/>
+  <circle class="ncm-glow m1" cx="32" cy="8" r="4.5"/><circle class="ncm-glow m2" cx="49" cy="15" r="4.5"/>
+  <circle class="ncm-glow m3" cx="56" cy="32" r="4.5"/><circle class="ncm-glow m4" cx="49" cy="49" r="4.5"/>
+  <circle class="ncm-glow m5" cx="32" cy="56" r="4.5"/><circle class="ncm-glow m6" cx="15" cy="49" r="4.5"/>
+  <circle class="ncm-glow m7" cx="8" cy="32" r="4.5"/><circle class="ncm-glow m8" cx="15" cy="15" r="4.5"/>
+
+  <!-- tinted container (brand pattern) -->
+  <rect x="21" y="21" width="22" height="22" rx="7" fill="url(#ncm-grad)"/>
+
+  <svg x="25" y="25" width="14" height="14" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97.76 91.93"><defs></defs><polygon fill="#ffffff" points="44.26 32.35 27.72 67.12 43.29 74.9 0 91.93 44.26 0 44.26 32.35"></polygon><polygon fill="#ffffff" points="53.5 32.35 70.04 67.12 54.47 74.9 97.76 91.93 53.5 0 53.5 32.35"></polygon><polygon fill="#ffffff" points="48.64 43.78 58.33 62.94 48.64 67.69 39.47 62.92 48.64 43.78"></polygon></svg>
+
+</svg>
