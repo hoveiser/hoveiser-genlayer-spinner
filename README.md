@@ -26,5 +26,13 @@ sit in a button.
 HTML: `<img src="neural-consensus.svg" width="32" height="32" alt="Loading…">`
 React: `import spinner from "./neural-consensus.svg"` → `<img src={spinner} alt="Loading…" />`
 
+## Brand compliance
+Built against the official GenLayer Design System (genlayer-foundation/genlayer-design):
+- Signature gradient #E37DF7 → #9B6AF6 → #110FFF (the brand's primary motif) drives the active pulse
+- Idle nodes use neutral ink #6B6B6B; single accent #110FFF
+- Motion: 1.6s gentle ease loop — inside the brand's 1.5–3s window; no bounce/spring
+- The official mark (GenLayer_Mark_White.svg) is used unmodified and never rotated,
+  on a gradient tinted container — the brand's own small-icon pattern
+
 ## License
 MIT
