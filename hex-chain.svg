@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Loading — GenLayer">
+  <style>
+    .hx{fill:none;stroke:#110FFF;stroke-width:2;stroke-linejoin:round;transform-box:fill-box;transform-origin:center}
+    .hx1{opacity:.35;animation:hx-cw 6s linear infinite}
+    .hx2{opacity:.55;animation:hx-ccw 4s linear infinite}
+    .hx3{animation:hx-pulse 1.6s ease-in-out infinite}
+    @keyframes hx-cw{to{transform:rotate(360deg)}}
+    @keyframes hx-ccw{to{transform:rotate(-360deg)}}
+    @keyframes hx-pulse{0%,100%{opacity:.4}50%{opacity:1}}
+    @media (prefers-reduced-motion:reduce){.hx1,.hx2,.hx3{animation:none;opacity:.8}}
+  </style>
+  <polygon class="hx hx1" points="58,32 45,54.5 19,54.5 6,32 19,9.5 45,9.5"/>
+  <polygon class="hx hx2" points="49,32 40.5,46.7 23.5,46.7 15,32 23.5,17.3 40.5,17.3"/>
+  <polygon class="hx hx3" points="40,32 36,38.9 28,38.9 24,32 28,25.1 36,25.1"/>
+</svg>

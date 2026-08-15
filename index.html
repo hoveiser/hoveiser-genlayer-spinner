@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GenLayer Spinner — Neural Consensus</title>
+<style>
+  :root{--cobalt:#110FFF;--void:#070707;--ceramic:#F5F5F5;--asphalt:#606060}
+  *{box-sizing:border-box}body{margin:0;font:16px/1.6 system-ui,sans-serif;background:var(--ceramic);color:var(--void)}
+  header{padding:48px 24px;text-align:center}h1{margin:0 0 8px}p.sub{margin:0;color:var(--asphalt)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;max-width:960px;margin:0 auto;padding:0 16px 32px}
+  .card{border-radius:16px;padding:32px;display:flex;flex-direction:column;align-items:center;gap:16px}
+  .light{background:#fff;border:1px solid #e5e5e5}.dark{background:var(--void);color:var(--ceramic)}
+  .sizes{display:flex;align-items:center;gap:20px}
+  .label{font-size:12px;letter-spacing:.08em;text-transform:uppercase;opacity:.6}
+  .wrap{max-width:960px;margin:0 auto;padding:0 16px 64px}
+  pre{background:#111;color:#eee;border-radius:12px;padding:16px;overflow:auto;font-size:13px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Neural Consensus</h1>
+  <p class="sub">A loading spinner for the GenLayer Portal — eight validators, one agreement.</p>
+</header>
+<div class="grid">
+  <div class="card light"><span class="label">Light · 64px</span>
+    <img src="neural-consensus.svg" width="64" height="64" alt="Spinner on light background"></div>
+  <div class="card dark"><span class="label">Dark · 64px</span>
+    <img src="neural-consensus.svg" width="64" height="64" alt="Spinner on dark background"></div>
+  <div class="card light"><span class="label">16 / 24 / 32 / 48 px</span>
+    <div class="sizes">
+      <img src="neural-consensus.svg" width="16" height="16" alt="">
+      <img src="neural-consensus.svg" width="24" height="24" alt="">
+      <img src="neural-consensus.svg" width="32" height="32" alt="">
+      <img src="neural-consensus.svg" width="48" height="48" alt="">
+    </div></div>
+  <div class="card dark"><span class="label">Alternate · Hex Chain</span>
+    <img src="hex-chain.svg" width="64" height="64" alt="Hex chain spinner"></div>
+</div>
+<div class="wrap">
+  <h2>Usage</h2>
+  <pre><code>&lt;img src="neural-consensus.svg" width="32" height="32" alt="Loading…"&gt;</code></pre>
+  <p>Self-contained SVG — no JavaScript, no dependencies. Pure-CSS variant in <code>spinner.css</code>.</p>
+</div>
+</body>
+</html>
